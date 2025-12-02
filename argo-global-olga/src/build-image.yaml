@@ -25,7 +25,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./argo-global-olga/src  # Path to the Dockerfile and build context
+          context: ./argo-global-olga/src/Dockerfile  # Path to the Dockerfile and build context
           push: true
           tags: |
             olgafux/app-node:${{ github.sha }}
