@@ -28,7 +28,7 @@ jobs:
           context: ./argo-global-olga/src  # Path to the Dockerfile and build context
           push: true
           tags: |
-            olgafux/app_olga:${{ github.sha }}
+            olgafux/app_olga:latest-olga
 
       - name: Logout from Docker Hub
         run: docker logout
